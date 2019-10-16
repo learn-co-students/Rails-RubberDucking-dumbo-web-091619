@@ -1,0 +1,9 @@
+<%= content_tag :h1, @student.name %>
+<%= content_tag :p, @student.mod %>
+
+<ul>
+    <% @student.ducks.each do |duck| %>
+        <% duck_name_and_desc = "Name: " + duck.name + " Description: " +  duck.description %>
+        <%= content_tag(:li, duck_name_and_desc )%>
+    <% end %>
+</ul>
