@@ -1,9 +1,9 @@
 <%= form_for @student do |f| %>
     <%= f.label 'Student Name' %><br>
-    <%= f.text_field :name %><br>
+    <%= f.text_field :name, :required => true %><br>
 
     <%= f.label 'Mod' %><br>
-    <%= f.text_area :mod %><br>
+    <%= f.number_field :mod %><br>
 
       <%= collection_select :student, :duck_ids, Duck.all, :id, :name %>
 
