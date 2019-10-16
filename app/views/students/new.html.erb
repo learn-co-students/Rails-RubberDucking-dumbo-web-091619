@@ -1,0 +1,11 @@
+<% if flash[:alert] %>
+    <div class="alert"> <%= flash[:alert] %> </div>
+<% end %>
+
+<%= form_for @student do |f| %>
+    <%= f.label :name %><br>    
+    <%= f.text_field :name %><br>
+    <%= f.label :mod %><br>    
+    <%= f.select :mod, ((1..5).map {|i| [i,i] }) %>
+    <%= f.submit %>
+<% end %>

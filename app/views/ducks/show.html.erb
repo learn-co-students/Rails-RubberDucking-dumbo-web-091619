@@ -1,0 +1,6 @@
+<%= content_tag :h1, "Name: " + @duck.name.capitalize %>
+<%= content_tag :h3,  "Description: " + @duck.description %>
+
+<p>Belongs to:</p>
+
+<%= content_tag :p,  @duck.student.name %>
