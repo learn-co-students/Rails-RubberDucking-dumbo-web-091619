@@ -1,0 +1,10 @@
+<h1><%= @student.name %></h1>
+
+<h2>My Ducks:</h2> <br>
+<ul>
+  <% @student.ducks.uniq.each do |duck| %>
+  <li>
+    <%= link_to duck.name, duck_path(duck) %>
+  </li>
+  <% end %>
+</ul>

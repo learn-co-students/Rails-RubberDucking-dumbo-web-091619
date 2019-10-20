@@ -1,0 +1,5 @@
+<h1><%= @duck.name %></h1>
+<h2>Description: <%= @duck.description %></h2>
+<form>
+  <input type="button" onclick="window.location.href = '<%= edit_duck_path %>';" value="Edit Duck"/>
+</form>
