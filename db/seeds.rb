@@ -8,3 +8,5 @@ end
 50.times do
   Duck.create(name: Faker::Name.unique.name, description: Faker::Dog.breed, student_id: Student.all.sample.id)
 end
+
+f
