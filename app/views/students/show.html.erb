@@ -1,0 +1,8 @@
+<h1><%= @student.name %></h1>
+<h2>Mod <%= @student.mod %></h2>
+<ul>
+<% @student.ducks.each do |duck| %>
+<li><%= duck.name %></li>
+<% end %>
+</ul>
+<%= button_to "Edit Student", edit_student_path, method: :get %>
